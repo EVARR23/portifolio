@@ -1,49 +1,50 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Portifólio ~ Eva Reboucas</title>
+    <title>Portfólio ~ Eva Rebouças</title>
 </head>
 
 <body>
-    <header>
+    <header class="sidebar">
+        <img src="img/foto_Perfil_Eva.jpeg" width="150" height="150" alt="Foto de perfil de Eva Rebouças">
+
         <nav>
             <ul>
-                <li>
-                    <a href="https://www.linkedin.com/in/evareboucasrodrigues/">Home</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/evareboucasrodrigues/">Sobre</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/evareboucasrodrigues/">Contato</a>
-                </li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
+
     <main class="container">
-        <section>
-            <h1>Olá, eu sou Eva Rebouças</h1>
+        <section id="home">
+            <h1>Olá, eu sou Eva Rebouças Rodrigues</h1>
             <p class="titulo-prime">Desenvolvedora Front-End</p>
-            <img src="img/foto_Perfil_Eva.jpeg" width="300" height="300" alt="Foto de perfil de Eva Rebouças">
         </section>
-        <section>
+
+        <section id="sobre">
             <h3>Habilidades:</h3>
             <ol>
-                <li>Html</li>
-                <li>Css</li>
+                <li>HTML</li>
+                <li>CSS</li>
                 <li>JavaScript</li>
                 <li>React</li>
             </ol>
         </section>
-        <footer>
-            <p>Conheça mais sobre os meus projetos:
-                <a href="https://www.linkedin.com/in/evareboucasrodrigues/">Acesse!</a>
-            </p>
-        </footer>
+
+        <section id="contato">
+            <footer>
+                <p>Conheça mais sobre os meus projetos:
+                    <a href="https://www.linkedin.com/in/evareboucasrodrigues/" target="_blank">Acesse!</a>
+                </p>
+            </footer>
+        </section>
+    </main>
 </body>
 
 </html>
