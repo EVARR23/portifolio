@@ -4,6 +4,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+   
+    color: hsl(0, 100%, 99%);
+
 }
 
 body {
@@ -12,6 +15,13 @@ body {
     background-color: #f9f9f9;
 }
 
+.titulo-nome {
+   font-family: 'Roboto Mono', monospace;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
 
 /* Sidebar */
 .sidebar {
@@ -55,20 +65,21 @@ body {
 /* Conteúdo */
 .container {
     margin-left: 200px;
-    padding: 40px;
-    min-height: 100vh;
     width: calc(100% - 200px);
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centraliza verticalmente */
+    align-items: center;     /* centraliza horizontalmente */
+
+    text-align: center;
 
     background-image: url('img/premium_photo-1714618833577-a09acdf53789.avif');
     background-size: cover;
-    /* faz a imagem cobrir todo o container */
     background-position: center;
-    /* centraliza a imagem */
     background-repeat: no-repeat;
-    /* não repete a imagem */
-
     color: #fff;
-    /* texto em branco */
 }
 
 
@@ -80,8 +91,10 @@ h1 {
 .titulo-prime {
     font-size: 1.5rem;
     font-style: italic;
-    color: #444;
+    color: #ffffff;
 }
+
+
 
 h3 {
     margin-top: 30px;
