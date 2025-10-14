@@ -2,111 +2,79 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Portfólio ~ Eva Rebouças</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Portfólio ~ Eva Rebouças</title>
 </head>
 
 <body>
-    <header class="sidebar">
-        <img src="img/foto_Perfil_Eva.jpeg" width="150" height="150" alt="Foto de perfil de Eva Rebouças">
+  <!-- Menu lateral -->
+  <aside class="sidebar">
+    <img src="img/foto_Perfil_Eva.jpeg" width="150" height="150" alt="Foto de perfil de Eva Rebouças" class="foto-perfil">
 
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#projeto">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
+    <nav class="menu">
+      <ul>
+        <li><a href="#inicio" class="active">Início</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
 
+    <!-- Ícones de redes -->
+    <div class="redes">
+      <a href="https://github.com/EVARR23" target="_blank">
+        <img src="img/github2.png" alt="GitHub" class="icone-rede">
+      </a>
+      <a href="https://www.linkedin.com/in/evareboucasrodrigues/" target="_blank">
+        <img src="img/linkedin.png" alt="LinkedIn" class="icone-rede">
+      </a>
+    </div>
+  </aside>
 
+  <!-- Conteúdo principal -->
+  <main class="container">
+    <section id="inicio" class="inicio">
+      <h1 class="titulo-nome">Eva Rebouças Rodrigues</h1>
+      <p class="titulo-prime">PROGRAMADORA | ANALISTA DE TESTE | QA</p>
+      <p class="descricao">
+        Sou desenvolvedora back-end e analista de testes. Minha missão é transformar ideias em experiências digitais modernas, responsivas e centradas no usuário.
+      </p>
+    </section>
 
-       <section class="area-contatos">
-    <ul class="contato-git">
-        <li>
-            <a href="https://github.com/EVARR23" target="_blank">
-                <img src="img/github2.png" alt="GitHub" class="img-git">
-            </a>
-        </li>
-    </ul>
-</section>
+    <section id="sobre" class="sobre">
+      <h2>Sobre mim</h2>
+      <p>Sou apaixonada por tecnologia, qualidade de software e design de interfaces. Tenho experiência com:</p>
+      
+    </section>
 
+    <section id="habilidades" class="habilidades">
+      <h2>Habilidades</h2>
+      <ul>
+        <li>Criação de interfaces modernas e responsivas</li>
+        <li>Automação de testes com Robot Framework</li>
+        <li>Integração de APIs RESTful</li>
+        <li>Deploy em ambientes cloud (AWS)</li>
+      </ul>
+    </section>
 
-       <section class="area-contatos">
-    <ul class="contato-git">
-        <li>
-            <a href="https://www.linkedin.com/in/evareboucasrodrigues/" target="_blank">
-                <img src="img/linkedin.png" alt="GitHub" class="img-git">
-            </a>
-        </li>
-    </ul>
-</section>
+    <section id="projetos" class="projetos">
+      <h2>Projetos</h2>
+      <ul>
+        <li>📊 Painel administrativo com Django e Chart.js</li>
+        <li>💬 Bot de automação de QA com Robot Framework</li>
+        <li>💻 Portfólio em HTML, CSS e JavaScript</li>
+      </ul>
+    </section>
 
-
-        
-        </nav>
-    </header>
-
-    <main class="container">
-        <section id="home">
-            <h1 class="titulo-nome">Eva Rebouças Rodrigues</h1>
-            <p class="titulo-prime">PROGRAMADORA | ANALISTA DE TESTE | QA</p>
-        </section>
-
-
-          <section class="inicio"id="inicio">
-            <h3>Inicio:</h3>
-            <ol>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-            </ol>
-        </section>
-
-        
-          <section class="sobre" id="sobre">
-            <h3>Sobre mim!</h3>
-            <ol>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-            </ol>
-        </section>
-        
-
-        <section class="habilidades" id="habilidades">
-            <h3>Habilidades:</h3>
-            <ol>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-            </ol>
-        </section>
-
-             
-          <section  class="projeto" id="projeto">
-            <h3>Projeto:</h3>
-            <ol>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-            </ol>
-        </section>
-
-
-        <section class="contato"id="contato">
-            <footer>
-                <p>Conheça mais sobre os meus projetos:
-                    <a href="https://www.linkedin.com/in/evareboucasrodrigues/" target="_blank">Acesse!</a>
-                </p>
-            </footer>
-        </section>
-    </main>
+    <section id="contato" class="contato">
+      <h2>Contato</h2>
+      <p>Quer conhecer mais sobre meus projetos?</p>
+      <a href="https://www.linkedin.com/in/evareboucasrodrigues/" target="_blank" class="botao-contato">Acesse meu LinkedIn</a>
+    </section>
+  </main>
 </body>
 
 </html>
