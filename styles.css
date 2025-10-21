@@ -186,6 +186,144 @@ ul li, ol li {
   background: #00b8d8;
 }
 
+.projetos h2 {
+  width: 100%;
+}
+
+.projetos {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap; 
+  align-items: center;
+  justify-content: space-between;
+}
+
+.projetos div{
+  width: 20%;
+  padding: 2%;
+  border-radius: 20px;
+  border: 1px solid black;
+  margin-bottom: 2%;
+  box-shadow: 3px 3px 18px;
+  transform: 0.5s all;
+  cursor: pointer;
+}
+
+.projetos div:hover {
+  transform: scale(1.05);
+}
+
+.projetos div img {
+  width: 100%;
+}
+
+.projetos div h3 {
+  font-size: 1.5rem;
+  color: #e9e1e1;
+}
+
+.projetos div button {
+  margin-top: 20px;
+  outline: none;
+  background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 831) 100%);;
+  font-weight: bold;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: 0.5s all;
+  letter-spacing: 3px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+.contato {
+  padding: 60px 20px;
+  text-align: center;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05); /* leve transparência */
+  backdrop-filter: blur(8px); /* efeito de vidro fosco */
+  border-radius: 16px;
+  max-width: 700px;
+  margin: 60px auto;
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
+}
+
+.contato h2 {
+  font-size: 2rem;
+  color: #00d4ff;
+  margin-bottom: 10px;
+}
+
+.contato p {
+  color: #ffffff;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+/* FORMULÁRIO */
+.contato form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contato form label {
+  font-weight: 600;
+  color: #00d4ff;
+  align-self: flex-start;
+}
+
+/* Inputs e textarea com traço transparente */
+.contato form input,
+.contato form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.3); /* traço transparente */
+  background-color: rgba(255, 255, 255, 0.05); /* fundo translúcido */
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.contato form input::placeholder,
+.contato form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contato form input:focus,
+.contato form textarea:focus {
+  border-color: #00d4ff;
+  box-shadow: 0 0 8px rgba(0, 212, 255, 0.5);
+}
+
+.contato form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Botão */
+.contato form button {
+  padding: 12px 25px;
+  background: linear-gradient(90deg, #2a7b9b 0%, #57c785 50%, #eddd83 100%);
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contato form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.4);
+}
+
 /* ===== RODAPÉ ===== */
 footer {
   margin-top: 40px;
@@ -220,4 +358,6 @@ footer a:hover {
   .titulo-nome {
     font-size: 2rem;
   }
+
+
 }
