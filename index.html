@@ -96,22 +96,24 @@
     <section id="contato"  class="contato">
       <h2>Entre em contato </h2>
       <p>Quer conhecer mais sobre meus projetos?</p>
-    <form>
-      <label>Nome:</label>
-      <input type="nome" placeholder="Seu nome..."/>
 
-        <label>E-mail:</label>
-      <input type="email" placeholder="Seu e-mail..."/>
+<form action="https://postmail.invotes.com/send" method="post" id="email_form">
+    <input type="text" name="name" placeholder="Seu Nome..." /> 
 
-        <label>Assunto:</label>
-      <input type="assunto" placeholder="Assunto..."/>
+    <input type="email" name="email" placeholder="Seu E-mail..." />
 
-        <label>Mensagem:</label>
-      <textarea type="mensagem" placeholder="Sua mensagem..."></textarea>
+    <input type="text" name="subject" placeholder="Assunto..." /> 
 
-      <button type="submit">enviar mensagem</button>
-     </form>
-    </section>
+    <textarea name="text" placeholder="Mensagem..."id="msg" rows="12"></textarea> 
+    
+    <input type="hidden" name="access_token" value="fznsslqbu82rnna66hyumtxd" /> 
+    
+    <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" /> 
+    
+    <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" /> 
+    
+    <input id="submit_form" type="submit" value="enviar mensagem" />
+</form>
 
   </main>
 </body>
